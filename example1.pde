@@ -9,13 +9,13 @@ void draw() {
   pushMatrix();
     noFill();
     strokeWeight(10);
-    stroke(255, 255, 255);
+    stroke(247,186,197);  // Pink color tail
     translate(300, 250);
     bezier(340, 80, 40, 40, 360, 360, 60, 320);
   popMatrix();
   
-  // setting thickness of shape outline from 
-  strokeWeight(1);
+  strokeWeight(2);    // resetting stroke width to being thin
+  stroke(0,0,0);       // setting stroke color to black 
   
   
   // left ear
