@@ -38,4 +38,28 @@ void draw() {
   fill(255, 0, 0);
   circle(400, 175, 220);
   
+  // feet
+  pushMatrix();
+    translate(400, 600);
+    fill(100,100,0);
+    // Left foot
+    ellipse(-50, 0, 100, 50);
+    // Right foot
+    ellipse(50, 0, 100, 50);
+  popMatrix();
+  
+  // right paw
+  pushMatrix();
+  translate(450,400);
+  rotate(PI/3.0);
+  ellipse(0, 0, 100, 50);
+  popMatrix();
+  
+  // left paw
+  pushMatrix();
+  translate(350,400);
+  rotate(PI/-3.0);
+  ellipse(0, 0, 100, 50);
+  popMatrix();
+  
 }
